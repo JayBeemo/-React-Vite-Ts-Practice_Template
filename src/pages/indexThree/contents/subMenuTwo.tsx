@@ -187,13 +187,6 @@ export const SubMenuTwo = () => {
           >
             SnackBar
           </Button>
-          <Snackbar
-            open={openSnack}
-            handleClose={handler.handleCloseSnack}
-            duration={5000}
-          >
-            <p>This is SnackBar Example.</p>
-          </Snackbar>
         </Box>
         <Box
           smooth={true}
@@ -220,6 +213,13 @@ export const SubMenuTwo = () => {
           </div>
         </Box>
       </main>
+      <Snackbar
+        open={openSnack}
+        handleClose={handler.handleCloseSnack}
+        duration={5000}
+      >
+        <p>This is SnackBar Example.</p>
+      </Snackbar>
     </Wrapper>
   );
 };
